@@ -45,7 +45,7 @@ public class CalendarMain {
 
 
 		
-		 int startHour=15;
+		 int startHour=12;
 		 int startMinute=30;
 		 int startDay=thisDay;  	
 		 int startMonth=thisMonth+1; 	
@@ -121,7 +121,7 @@ public class CalendarMain {
          // create another appointment
          startHour=16;
 		 startMinute=30;
-		 startDay=-1;		
+		 startDay=1;		
 		 startMonth=thisMonth+2;	
 		 startYear=thisYear;	
 		 title="Visit";

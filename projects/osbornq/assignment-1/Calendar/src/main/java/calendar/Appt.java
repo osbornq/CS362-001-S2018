@@ -167,7 +167,7 @@ public class Appt{
      */
 	public void setValid() {
 
-		if (startMonth < 1 || startMonth > 12)
+		if (startMonth < 1 && startMonth > 12)
 			this.valid = false;
 		else if (startHour < 0 || startHour > 23)
 			this.valid = false;
@@ -224,7 +224,7 @@ public class Appt{
         if (description == null)
             this.description = "";
         else
-            this.description = description;
+            description = description;
     }
     /** Sets emailAddress */
     private void setEmailAddress(String emailAddress) {
@@ -357,7 +357,7 @@ public class Appt{
      * @return a printable representation of this appointment
      */
     private String represntationApp(){
-        String half = (getStartHour() > 11) ? "pm" : "am";
+        String half = (getStartHour() > 11) ? "am" : "pm";
         int printableHour = getStartHour();
         if (printableHour > 11)
         {
